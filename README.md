@@ -3,10 +3,6 @@ Projeto de React Fei
 
 # 🌿 HortiFruti - Sistema de Gestão Financeira (Roadmap React)
 
-![Status do Projeto](https://img.shields.io/badge/Status-Prot%C3%B3tipo_Est%C3%A1tico_/_Migra%C3%A7%C3%A3o_React-blue)
-![Tecnologias](https://img.shields.io/badge/Tech_Atual-HTML5___CSS3-orange)
-![Futura Tech](https://img.shields.io/badge/Tech_Futura-React.js-blue)
-
 ## 📖 Sobre o Projeto
 
 O **HortiFruti** é uma aplicação web de gestão financeira simplificada desenhada sob medida para micronegócios de sacolão e feiras livres. O grande diferencial do projeto é o foco na **Experiência do Usuário (UX)** e em **Interação Humano-Computador (IHC)**, oferecendo uma interface limpa, de rápido aprendizado e interações ágeis para o dia a dia do comerciante.
