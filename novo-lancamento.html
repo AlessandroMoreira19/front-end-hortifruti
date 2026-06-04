@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HortiFruti — Painel</title>
+  <title>HortiFruti — Novo Lançamento</title>
   <link rel="stylesheet" href="css\style.css" />
 </head>
 <body>
@@ -15,11 +15,11 @@
       <h1>HortiFruti</h1>
     </div>
 
-    <a href="painel.html" class="nav-item active">
+    <a href="painel.html" class="nav-item">
       <span class="nav-icon">▦</span>
       Painel
     </a>
-    <a href="fluxo-abrir.html" class="nav-item">
+    <a href="fluxo-abrir.html" class="nav-item active">
       <span class="nav-icon">💰</span>
       Fluxo de Caixa
     </a>
@@ -31,32 +31,26 @@
 
   <!-- ======= CONTEÚDO ======= -->
   <main class="page-layout">
-    <h2 class="page-title">Painel</h2>
 
-    <div class="card-grid">
+    <div class="form-panel w-660">
+      <h3 class="form-panel-title">Novo Lançamento</h3>
 
-      <div class="card">
-        <p class="card-title">Saldo</p>
-        <p class="card-value">R$ 0,00</p>
-      </div>
+      <label class="form-label" for="valor">Novo valor (R$)</label>
+      <input
+        class="form-input"
+        id="valor"
+        type="number"
+        min="0"
+        step="0.01"
+        placeholder="Digite o valor a ser lançado:"
+      />
 
-      <div class="card">
-        <p class="card-title">Transações</p>
-        <p class="card-value">0</p>
-      </div>
-
-      <div class="card card-vermelho">
-        <p class="card-title">Despesas</p>
-        <p class="card-value">R$ 0,00</p>
-      </div>
-
-      <div class="card">
-        <p class="card-title">Receitas</p>
-        <p class="card-value">R$ 0,00</p>
-      </div>
-
+      <a href="fluxo-aberto.html" class="btn btn-verde btn-full">
+        💵 Lançar
+      </a>
     </div>
+
   </main>
-  
+  <script src="javascript\app.js"></script>
 </body>
 </html>

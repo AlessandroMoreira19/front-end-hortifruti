@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HortiFruti — Novo Lançamento</title>
+  <title>HortiFruti — Fluxo de Caixa</title>
   <link rel="stylesheet" href="css\style.css" />
 </head>
 <body>
@@ -31,26 +31,27 @@
 
   <!-- ======= CONTEÚDO ======= -->
   <main class="page-layout">
+    <h2 class="page-title">Fluxo de Caixa</h2>
 
-    <div class="form-panel w-660">
-      <h3 class="form-panel-title">Novo Lançamento</h3>
+    <div class="form-panel">
+      <h3 class="form-panel-title">Abrir caixa</h3>
 
-      <label class="form-label" for="valor">Novo valor (R$)</label>
+      <label class="form-label" for="saldo-inicial">Saldo Inicial (R$)</label>
       <input
         class="form-input"
-        id="valor"
+        id="saldo-inicial"
         type="number"
         min="0"
         step="0.01"
-        placeholder="Digite o valor a ser lançado:"
+        placeholder="Digite o saldo inicial"
       />
 
       <a href="fluxo-aberto.html" class="btn btn-verde btn-full">
-        💵 Lançar
+        🏪 Abrir caixa
       </a>
     </div>
 
   </main>
-  
+  <script src="javascript\app.js"></script>
 </body>
 </html>
