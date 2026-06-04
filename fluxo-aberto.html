@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HortiFruti — Caixa Aberto</title>
+  <link rel="stylesheet" href="css\style.css" />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="leaf">🌿</span>
+      <h1>HortiFruti</h1>
+    </div>
+
+    <a href="painel.html" class="nav-item">
+      <span class="nav-icon">▦</span>
+      Painel
+    </a>
+    <a href="fluxo-abrir.html" class="nav-item active">
+      <span class="nav-icon">💰</span>
+      Fluxo de Caixa
+    </a>
+    <a href="relatorios.html" class="nav-item">
+      <span class="nav-icon">📋</span>
+      Relatórios
+    </a>
+  </aside>
+
+  <main class="page-layout">
+    <h2 class="page-title">Caixa Aberto</h2>
+
+    <div class="card-grid-3">
+      <div class="card">
+        <p class="card-title">Saldo Inicial</p>
+        <p class="card-value">R$ 0,00</p>
+      </div>
+      <div class="card">
+        <p class="card-title">Receitas</p>
+        <p class="card-value">R$ 0,00</p>
+      </div>
+      <div class="card card-vermelho">
+        <p class="card-title">Despesas</p>
+        <p class="card-value">R$ 0,00</p>
+      </div>
+    </div>
+
+    <div class="acoes-row">
+      <a href="novo-lancamento.html" class="btn btn-verde-claro">
+        + Novo lançamento
+      </a>
+      <a href="impressao.html" class="btn btn-verde">
+        🖨️ Relatório / Imprimir
+      </a>
+      <a href="fluxo-abrir.html" id="btn-fechar" class="btn btn-vermelho">
+        Fechar caixa
+      </a>
+    </div>
+
+    <div class="transacoes-box">
+      <p class="transacoes-vazio">Nenhuma transação registrada ainda.</p>
+    </div>
+
+  </main>
+
+  <script src="javascript\app.js"></script>
+</body>
+</html>

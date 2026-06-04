@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HortiFruti — Tipo de Impressão</title>
+  <link rel="stylesheet" href="css\style.css" />
+</head>
+<body>
+
+  <!-- ======= SIDEBAR ======= -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="leaf">🌿</span>
+      <h1>HortiFruti</h1>
+    </div>
+
+    <a href="painel.html" class="nav-item">
+      <span class="nav-icon">▦</span>
+      Painel
+    </a>
+    <a href="fluxo-abrir.html" class="nav-item">
+      <span class="nav-icon">💰</span>
+      Fluxo de Caixa
+    </a>
+    <a href="relatorios.html" class="nav-item active">
+      <span class="nav-icon">📋</span>
+      Relatórios
+    </a>
+  </aside>
+
+  <!-- ======= CONTEÚDO ======= -->
+  <main class="page-layout">
+    <h2 class="page-title">Escolher Tipo de Impressão</h2>
+
+    <div class="impressao-grid">
+
+      <!-- Excel -->
+      <a href="#" class="impressao-card impressao-excel">
+        <span class="icon-grande">📊</span>
+        Excel
+      </a>
+
+      <!-- PDF -->
+      <a href="#" class="impressao-card impressao-pdf">
+        <span class="icon-grande">📄</span>
+        PDF
+      </a>
+
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+  <script src="javascript\app.js?v=999"></script>
+</body>
+</html>
