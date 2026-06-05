@@ -133,3 +133,67 @@ function initFluxoAberto() {
     });
   }
 }
+
+function initNovoLancamento() {
+  const caixa = getCaixa();
+  const container = document.querySelector('.form-panel');
+  const inputValor = document.getElementById('valor');
+  const btnLancar = document.querySelector('.btn-verde');
+
+  if (container && btnLancar && !document.getElementById('tipo-lancamento')) {
+    const typeLabel = document.createElement('label');
+    typeLabel.className = 'form-label';
+    typeLabel.textContent = 'Tipo de Lançamento';
+    typeLabel.style.marginTop = '15px';
+    
+    const selectType = document.createElement('select');
+    selectType.className = 'form-input';
+    selectType.id = 'tipo-lancamento';
+    selectType.innerHTML = `
+      <option value="receita">Receita (Entrada)</option>
+      <option value="despesa">Despesa (Saída)</option>
+    `;
+
+    const descLabel = document.createElement('label');
+    descLabel.className = 'form-label';
+    descLabel.textContent = 'Descrição';
+    descLabel.style.marginTop = '15px';
+
+    const inputDesc = document.createElement('input');
+    inputDesc.className = 'form-input';
+    inputDesc.id = 'desc-lancamento';
+    inputDesc.type = 'text';
+    inputDesc.placeholder = 'Ex: Venda de maçãs';
+
+    container.insertBefore(typeLabel, btnLancar);
+    container.insertBefore(selectType, btnLancar);
+    container.insertBefore(descLabel, btnLancar);
+    container.insertBefore(inputDesc, btnLancar);
+    btnLancar.style.marginTop = '20px';
+
+    btnLancar.addEventListener('click', (e) => {
+      e.preventDefault();
+      const valor = parseFloat(inputValor.value);
+      const tipo = selectType.value;
+      const descricao = inputDesc.value.trim() || 'Lançamento sem descrição';
+
+      if (!valor || valor <= 0) {
+        alert('Por favor, digite um valor maior que zero.');
+        return;
+      }
+
+      const agora = new Date();
+      caixa.transacoes.push({
+        data: agora.toLocaleDateString('pt-BR'), 
+        dataIso: agora.toISOString().split('T')[0], 
+        hora: agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+        tipo,
+        descricao,
+        valor
+      });
+
+      salvarCaixa(caixa);
+      window.location.href = 'fluxo-aberto.html';
+    });
+  }
+}
