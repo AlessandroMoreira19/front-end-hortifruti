@@ -1,47 +1,16 @@
-# front-end-hortifruti
-Projeto de React Fei
+# React + Vite
 
-# 🌿 HortiFruti - Sistema de Gestão Financeira (Roadmap React)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 📖 Sobre o Projeto
+Currently, two official plugins are available:
 
-O **HortiFruti** é uma aplicação web de gestão financeira simplificada desenhada sob medida para micronegócios de sacolão e feiras livres. O grande diferencial do projeto é o foco na **Experiência do Usuário (UX)** e em **Interação Humano-Computador (IHC)**, oferecendo uma interface limpa, de rápido aprendizado e interações ágeis para o dia a dia do comerciante.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Atualmente, o projeto encontra-se na fase de **Protótipo Funcional de Alta Fidelidade (HTML/CSS)**, com toda a arquitetura pensada e estruturada logicamente para ser componentizada e migrada para **React.js** na próxima etapa de desenvolvimento.
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🚀 Estrutura de Telas (Prontas para Componentização)
+## Expanding the ESLint configuration
 
-A interface estática foi mapeada de forma modular, ideal para a futura divisão em componentes do React:
-
-* **Menu Inicial (`index.html`):** Hub central de boas-vindas e rotas principais (Painel, Fluxo de Caixa e Relatórios).
-* **Painel / Dashboard (`painel.html`):** Exibe o resumo financeiro em blocos. No React, esses blocos se transformarão em um componente `<Card tipo="..." valor="..." />` reaproveitável.
-* **Fluxo de Caixa (`fluxo-abrir.html` / `fluxo-aberto.html`):** Telas de controle de operações diárias, contendo formulários de abertura de caixa e listagem dinâmica de receitas/despesas.
-* **Lançamentos (`novo-lancamento.html`):** Painel simplificado para inserção rápida de novos valores de entrada ou saída.
-* **Relatórios e Impressão (`relatorios.html` / `impressao.html`):** Filtros de busca por período e opções de exportação visual para Excel ou PDF.
-
----
-
-## 🎨 Design System e Preparação para o React
-
-As decisões de UI/UX foram centralizadas no arquivo global de estilos utilizando **CSS Variables (`:root`)**. Isso garante que, ao migrar para React (seja usando CSS Modules, Styled Components ou Tailwind), a identidade visual seja mantida com facilidade:
-
-* **Consistência de Layout:** A barra de navegação lateral (`.sidebar`) está presente em todas as visões internas, sendo o elemento perfeito para virar um componente global de rotas no React.
-* **Tipografia e Cores:** Uso da fonte de alta legibilidade *Nunito* e paleta baseada em variações de verde (identidade com o negócio) e vermelho para alertas e despesas.
-
----
-
-## 🛠️ Tecnologias e Roadmap Técnico
-
-### Fase 1: Protótipo Funcional (Atual)
-* **HTML5:** Estruturação semântica e acessível de cada página do fluxo do usuário.
-* **CSS3 (Vanilla):** Layouts responsivos utilizando CSS Grid e Flexbox, além de variáveis de estilização reutilizáveis.
-
-### Fase 2: Migração para React (Próximos Passos)
-* [ ] Configuração do ambiente com Vite / Create React App.
-* [ ] Componentização da UI (`<Sidebar />`, `<Card />`, `<Button />`, `<FormInput />`).
-* [ ] Criação de Rotas dinâmicas utilizando `react-router-dom` (substituindo a navegação de arquivos `.html` soltos).
-* [ ] Gerenciamento de Estado (`useState`, `useContext`) para tornar o fluxo de caixa, inserção de lançamentos e abertura de caixas 100% dinâmicos em tempo real.
-
----
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
