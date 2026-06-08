@@ -86,3 +86,9 @@ git clone [https://github.com/AlessandroMoreira19/front-end-hortifruti.git](http
 
 # 2. Entre na pasta do projeto que acabou de ser criada
 cd front-end-hortifruti
+
+# 3. Baixe e configure automaticamente todas as bibliotecas necessárias listadas no package.json
+npm install react-router-dom recharts xlsx-js-style html2pdf.js
+
+# 4. Inicie o compilador em tempo real e ative o servidor de desenvolvimento local do Vite
+npm run dev
