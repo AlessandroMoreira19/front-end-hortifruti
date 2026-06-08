@@ -21,7 +21,6 @@
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Jornada de UX e UI](#-jornada-de-ux-e-ui)
 - [Como Rodar o Projeto (Guia Completo)](#-como-rodar-o-projeto-guia-completo)
-- [Equipe Desenvolvedora](#-equipe-desenvolvedora)
 
 ---
 
